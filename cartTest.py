@@ -5,16 +5,12 @@ from item import Item
 class TestCart(unittest.TestCase):
 
     def test_single_item_added(self):
-        # Create an item
         item = Item("Item 1", 10)
 
-        # Create a cart
         cart = Cart()
 
-        # Add the item to the cart
         cart.add_item(item)
 
-        # Verify that the item was added to the cart
         self.assertEqual(len(cart.items), 1, "Single item should be added to the cart")
 
     def test_multiple_items_added(self):

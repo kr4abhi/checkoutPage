@@ -1,4 +1,3 @@
-# order_processor.py
 class OrderProcessor:
     def place_order(self, cart, payment_details, shipping_address, payment_amount):
         # Simulate placing the order
